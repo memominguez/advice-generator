@@ -44,17 +44,17 @@
     font-size: 2rem;
   }
   
-  .dice {
+  .aroundButton {
     height: 60px;
     width: 60px;
     background: var(--neon-green); 
     border: none; 
-    border-radius: 50%;  
-    display: flex;
-    justify-content: center;
-    align-items: center;     
+    border-radius: 50%;   
     transform: translateY(42px);
-    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;   
   }
 
   .spinner {
@@ -67,7 +67,7 @@
     color: red;
   }
   
-  .dice.shadow {
+  .aroundButton.shadow {
     box-shadow: 0px 0px 40px hsla(150, 100%, 66%, 0.5); 
     transform:  translateY(42px) rotate(45deg);
   }
@@ -94,11 +94,11 @@
       letter-spacing: -0.24px;
     }
   
-    .dice {
+    .aroundButton {
      transform: translateY(62px);
     }
 
-    .dice.shadow {
+    .aroundButton.shadow {
       transform: translateY(62px) rotate(45deg);
     }
   }

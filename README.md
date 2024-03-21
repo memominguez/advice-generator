@@ -35,8 +35,11 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Pending
-- Live Site URL: Pending
+
+
+- Solution URL:  [Github repository](https://github.com/memominguez/advice-generator)
+- Live Site URL:  [Netlify](https://read-an-advice.netlify.app)
+
 
 ## My process
 

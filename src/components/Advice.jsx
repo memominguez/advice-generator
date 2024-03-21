@@ -50,7 +50,7 @@ const Advice = () => {
 
   const getAdvice = () => {
     setButtonclick((prevState) => prevState + 1);
-    setError(null)
+    setError(null);
   };
 
   return (
@@ -89,17 +89,19 @@ const Advice = () => {
       </div>
 
       <footer>
-        <button
+        <button 
+          disabled={isLoading} 
+          onClick={getAdvice}
           onMouseEnter={() => setButtonShadow(true)}
           onMouseLeave={() => setButtonShadow(false)}
           onTouchStart={() => setButtonShadow(true)}
           onTouchEnd={() => setButtonShadow(false)}
           className={
-            buttonShadow ? `${styles.dice} ${styles.shadow}` : `${styles.dice}`
+            buttonShadow
+              ? `${styles.aroundButton} ${styles.shadow}`
+              : `${styles.aroundButton}`
           }
-          disabled={isLoading}
-          onClick={getAdvice}
-        >
+          >
           <img src={dice} alt="Dice" />
         </button>
       </footer>
