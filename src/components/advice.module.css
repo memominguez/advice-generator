@@ -1,5 +1,6 @@
   
   .wrapper {
+    margin-top: 150px;
     background: var(--dark-grayish-blue);   
     width: 540px;
     height: 340px;  
@@ -75,6 +76,7 @@
   
   @media screen and (max-width: 576px) {
     .wrapper {
+      margin-top: 90px;
       width: 338px;
       height: 350px;
     }
